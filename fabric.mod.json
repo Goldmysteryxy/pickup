@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "pickupfilter",
+  "version": "${version}",
+  "name": "Pickup Filter",
+  "description": "Choose exactly which items you can pick up. Perfect for farms.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.pickupfilter.PickupFilterMod"],
+    "modmenu": ["com.example.pickupfilter.ModMenuIntegration"]
+  },
+  "mixins": ["pickupfilter.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
